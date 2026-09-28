@@ -50,6 +50,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
+nav a.ativo {
+    background-color: #ffffff;
+    color: #2e7d32;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 main {
     width: 90%;
     max-width: 1000px;
@@ -97,6 +104,14 @@ h2 {
     border-radius: 8px;
     text-align: center;
     vertical-align: top;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.produto:hover {
+    border-color: #2e7d32;
+    box-shadow: 0 4px 10px #cccccc;
+    transform: scale(1.05);
 }
 
 .produto img {
@@ -110,6 +125,57 @@ h2 {
 
 .preco {
     color: #2e7d32;
+    font-weight: bold;
+}
+
+.selo {
+    display: block;
+    width: 60px;
+    margin: 0 auto 5px auto;
+    background-color: #d32f2f;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+del {
+    color: #999999;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.botao-comprar {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: #ffffff;
+    padding: 6px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botao-comprar:hover {
+    background-color: #1b5e20;
+}
+
+.cupom {
+    background-color: #fff3e0;
+    border: 2px dashed #ff9800;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.categorias {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.categorias a {
+    color: #2e7d32;
+    margin-left: 15px;
     font-weight: bold;
 }
 
@@ -127,6 +193,10 @@ th, td {
 th {
     background-color: #2e7d32;
     color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f8e9;
 }
 
 label {
@@ -158,6 +228,39 @@ button:hover {
     background-color: #1b5e20;
 }
 
+fieldset {
+    margin-top: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.marcar {
+    width: auto;
+}
+
+.opcao {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+details {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #2e7d32;
+}
+
 footer {
     background-color: #333333;
     color: #ffffff;
@@ -167,4 +270,8 @@ footer {
 
 footer p {
     margin: 5px 0;
+}
+
+footer a {
+    color: #ff9800;
 }
