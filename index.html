@@ -16,12 +16,12 @@ turma: A1129-N-D.S.M.-312-20262
 </head>
 <body>
 
-    <header>
+    <header id="topo">
         <h1>Mercado Cesta Cheia</h1>
         <p>Delivery de mercado na porta da sua casa</p>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html" class="ativo">Início</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
@@ -34,6 +34,7 @@ turma: A1129-N-D.S.M.-312-20262
             <img src="img/sacola.svg" alt="Sacola de compras com frutas e verduras">
             <h2>Faça suas compras sem sair de casa!</h2>
             <p>Frutas, verduras, laticínios e produtos do dia a dia com entrega rápida.</p>
+            <p class="cupom">Primeira compra? Use o cupom <strong>BEMVINDO10</strong> e ganhe 10% de desconto!</p>
             <a href="produtos.html" class="botao">Ver produtos</a>
         </section>
 
@@ -43,20 +44,33 @@ turma: A1129-N-D.S.M.-312-20262
             <article class="produto">
                 <img src="img/maca.svg" alt="Maçã vermelha">
                 <h3>Maçã</h3>
-                <p>R$ 8,99 / kg</p>
+                <p class="preco">R$ 8,99 / kg</p>
+                <a href="contato.html" class="botao-comprar">Comprar</a>
             </article>
 
             <article class="produto">
+                <span class="selo">Oferta</span>
                 <img src="img/banana.svg" alt="Cacho de banana">
                 <h3>Banana</h3>
-                <p>R$ 5,49 / kg</p>
+                <p class="preco"><del>R$ 6,49</del> R$ 5,49 / kg</p>
+                <a href="contato.html" class="botao-comprar">Comprar</a>
             </article>
 
             <article class="produto">
                 <img src="img/leite.svg" alt="Caixa de leite">
                 <h3>Leite Integral</h3>
-                <p>R$ 4,79 / litro</p>
+                <p class="preco">R$ 4,79 / litro</p>
+                <a href="contato.html" class="botao-comprar">Comprar</a>
             </article>
+        </section>
+
+        <section>
+            <h2>Como funciona?</h2>
+            <ol>
+                <li>Escolha os produtos na página <a href="produtos.html">Produtos</a>.</li>
+                <li>Envie seu pedido pelo formulário da página <a href="contato.html">Contato</a>.</li>
+                <li>Receba as compras na porta da sua casa!</li>
+            </ol>
         </section>
 
         <section>
@@ -74,6 +88,7 @@ turma: A1129-N-D.S.M.-312-20262
     <footer>
         <p>&copy; 2026 Mercado Cesta Cheia - Todos os direitos reservados.</p>
         <p>Site desenvolvido para fins acadêmicos.</p>
+        <p><a href="#topo">Voltar ao topo</a></p>
     </footer>
 
 </body>

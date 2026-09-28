@@ -16,14 +16,14 @@ turma: A1129-N-D.S.M.-312-20262
 </head>
 <body>
 
-    <header>
+    <header id="topo">
         <h1>Mercado Cesta Cheia</h1>
         <p>Delivery de mercado na porta da sua casa</p>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="contato.html" class="ativo">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -55,8 +55,23 @@ turma: A1129-N-D.S.M.-312-20262
                     <option value="sugestao">Sugestão</option>
                 </select>
 
+                <fieldset>
+                    <legend>Forma de pagamento:</legend>
+                    <input type="radio" id="dinheiro" name="pagamento" value="dinheiro" class="marcar" checked>
+                    <label for="dinheiro" class="opcao">Dinheiro</label>
+                    <input type="radio" id="cartao" name="pagamento" value="cartao" class="marcar">
+                    <label for="cartao" class="opcao">Cartão</label>
+                    <input type="radio" id="pix" name="pagamento" value="pix" class="marcar">
+                    <label for="pix" class="opcao">Pix</label>
+                </fieldset>
+
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+                <p>
+                    <input type="checkbox" id="ofertas" name="ofertas" class="marcar">
+                    <label for="ofertas" class="opcao">Quero receber ofertas por e-mail</label>
+                </p>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -71,11 +86,31 @@ turma: A1129-N-D.S.M.-312-20262
             </ul>
         </section>
 
+        <section>
+            <h2>Perguntas frequentes</h2>
+
+            <details>
+                <summary>Qual o valor mínimo do pedido?</summary>
+                <p>O pedido mínimo é de R$ 30,00.</p>
+            </details>
+
+            <details>
+                <summary>Posso trocar um produto?</summary>
+                <p>Sim! Se algum produto chegar com problema, trocamos sem custo.</p>
+            </details>
+
+            <details>
+                <summary>Vocês entregam aos domingos?</summary>
+                <p>Sim, aos domingos entregamos das 8h às 12h.</p>
+            </details>
+        </section>
+
     </main>
 
     <footer>
         <p>&copy; 2026 Mercado Cesta Cheia - Todos os direitos reservados.</p>
         <p>Site desenvolvido para fins acadêmicos.</p>
+        <p><a href="#topo">Voltar ao topo</a></p>
     </footer>
 
 </body>

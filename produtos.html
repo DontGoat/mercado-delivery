@@ -16,13 +16,13 @@ turma: A1129-N-D.S.M.-312-20262
 </head>
 <body>
 
-    <header>
+    <header id="topo">
         <h1>Mercado Cesta Cheia</h1>
         <p>Delivery de mercado na porta da sua casa</p>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="produtos.html" class="ativo">Produtos</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
@@ -30,7 +30,14 @@ turma: A1129-N-D.S.M.-312-20262
 
     <main>
 
-        <section>
+        <nav class="categorias">
+            <strong>Categorias:</strong>
+            <a href="#hortifruti">Hortifruti</a>
+            <a href="#mercearia">Mercearia e Laticínios</a>
+            <a href="#entrega">Taxa de entrega</a>
+        </nav>
+
+        <section id="hortifruti">
             <h2>Hortifruti</h2>
 
             <article class="produto">
@@ -38,13 +45,16 @@ turma: A1129-N-D.S.M.-312-20262
                 <h3>Maçã</h3>
                 <p>Maçã fresca e docinha.</p>
                 <p class="preco">R$ 8,99 / kg</p>
+                <a href="contato.html" class="botao-comprar">Comprar</a>
             </article>
 
             <article class="produto">
+                <span class="selo">Oferta</span>
                 <img src="img/banana.svg" alt="Cacho de banana">
                 <h3>Banana</h3>
                 <p>Banana prata madura.</p>
-                <p class="preco">R$ 5,49 / kg</p>
+                <p class="preco"><del>R$ 6,49</del> R$ 5,49 / kg</p>
+                <a href="contato.html" class="botao-comprar">Comprar</a>
             </article>
 
             <article class="produto">
@@ -52,6 +62,7 @@ turma: A1129-N-D.S.M.-312-20262
                 <h3>Tomate</h3>
                 <p>Ideal para saladas e molhos.</p>
                 <p class="preco">R$ 7,90 / kg</p>
+                <a href="contato.html" class="botao-comprar">Comprar</a>
             </article>
 
             <article class="produto">
@@ -59,10 +70,11 @@ turma: A1129-N-D.S.M.-312-20262
                 <h3>Cenoura</h3>
                 <p>Cenoura fresquinha.</p>
                 <p class="preco">R$ 4,99 / kg</p>
+                <a href="contato.html" class="botao-comprar">Comprar</a>
             </article>
         </section>
 
-        <section>
+        <section id="mercearia">
             <h2>Mercearia e Laticínios</h2>
 
             <article class="produto">
@@ -70,6 +82,7 @@ turma: A1129-N-D.S.M.-312-20262
                 <h3>Leite Integral</h3>
                 <p>Caixa de 1 litro.</p>
                 <p class="preco">R$ 4,79</p>
+                <a href="contato.html" class="botao-comprar">Comprar</a>
             </article>
 
             <article class="produto">
@@ -77,13 +90,16 @@ turma: A1129-N-D.S.M.-312-20262
                 <h3>Pão Francês</h3>
                 <p>Feito na hora, todos os dias.</p>
                 <p class="preco">R$ 14,90 / kg</p>
+                <a href="contato.html" class="botao-comprar">Comprar</a>
             </article>
 
             <article class="produto">
+                <span class="selo">Oferta</span>
                 <img src="img/arroz.svg" alt="Pacote de arroz">
                 <h3>Arroz Branco</h3>
                 <p>Pacote de 5 kg.</p>
-                <p class="preco">R$ 27,90</p>
+                <p class="preco"><del>R$ 31,90</del> R$ 27,90</p>
+                <a href="contato.html" class="botao-comprar">Comprar</a>
             </article>
 
             <article class="produto">
@@ -91,10 +107,11 @@ turma: A1129-N-D.S.M.-312-20262
                 <h3>Ovos</h3>
                 <p>Bandeja com 12 unidades.</p>
                 <p class="preco">R$ 11,50</p>
+                <a href="contato.html" class="botao-comprar">Comprar</a>
             </article>
         </section>
 
-        <section>
+        <section id="entrega">
             <h2>Taxa de entrega</h2>
             <table>
                 <thead>
@@ -130,6 +147,7 @@ turma: A1129-N-D.S.M.-312-20262
     <footer>
         <p>&copy; 2026 Mercado Cesta Cheia - Todos os direitos reservados.</p>
         <p>Site desenvolvido para fins acadêmicos.</p>
+        <p><a href="#topo">Voltar ao topo</a></p>
     </footer>
 
 </body>
